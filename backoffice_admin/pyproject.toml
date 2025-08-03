@@ -1,0 +1,28 @@
+[project]
+name = "meu-ecommerce"
+version = "0.1.0"
+description = "Backend Django para administração do e-commerce de imó"
+authors = [
+    {name = "Romilson",email = "romilson@arpolar.com.br"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "django (>=5.2.4,<6.0.0)",
+    "django-cors-headers (>=4.7.0,<5.0.0)",
+    "python-decouple (>=3.8,<4.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "pillow (>=11.3.0,<12.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.3.0"
+pytest = "^8.4.1"
+pytest-django = "^4.11.1"
+
